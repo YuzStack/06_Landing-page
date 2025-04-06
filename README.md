@@ -1,1 +1,1 @@
-# my-first-landing-page
+In this project, I'm building my first Landing page base on The Odin Project's reference.
