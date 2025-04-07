@@ -88,3 +88,43 @@ header a:hover {
     border-radius: 10px;
 }
 
+.review {
+    margin: 100px 0px;
+    background-color: #E5E7EB;
+    padding: 100px 300px;
+}
+
+.review p {
+    font-size: 1.5rem;
+}
+
+.review h3 {
+    text-align: end;
+}
+
+.CTA-container {
+    background-color: #3882F6;
+    color: white;
+    margin: 100px 250px;
+    padding: 50px 125px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.CTA-container button {
+    background-color: #3882F6;
+    color: inherit;
+    padding: 10px;
+    border-style: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #1F2937;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
