@@ -5,6 +5,7 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* Primary Nav & Hero Section */
 header {
     background-color: #1F2937;
     color: white;
@@ -12,8 +13,15 @@ header {
 
 .logo-and-links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 15px 150px;
+    gap: 1.5rem;
+
+    @media (max-width: 768px) {
+        padding: 1rem;
+        justify-content: space-around;
+    }
 }
 
 .logo {
@@ -42,8 +50,18 @@ header a:hover {
 
 .hero-header {
     display: flex;
-    gap: 100px;
+    flex-wrap: wrap;
+    gap: 6rem;
     padding: 80px 150px 100px 150px;
+
+    @media (max-width: 768px) {
+        gap: 4rem;
+        padding: 50px 30px 50px;
+    }
+}
+
+.hero-header img {
+    max-width: 100%;
 }
 
 .hero-header h1 {
@@ -64,6 +82,8 @@ header a:hover {
     border-radius: 8px;
 }
 
+
+/* Features Section */
 .cards-section h1 {
     padding: 50px 15px;
     text-align: center;
@@ -72,9 +92,30 @@ header a:hover {
 
 .cards {
     display: flex;
+    /* flex-wrap: wrap; */
     padding: 0px 200px;
     text-align: center;
     gap: 30px;
+
+    @media (max-width: 768px) {
+        padding: 0 20px;
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: 944px) and (min-width: 768px) {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    @media (max-width: 1200px) and (min-width: 768px) {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .unit-card {
+        margin-bottom: 3rem;
+    }
 }
 
 .cards h3 {
@@ -88,10 +129,19 @@ header a:hover {
     border-radius: 10px;
 }
 
+/* Reviews Section */
 .review {
     margin: 100px 0px;
     background-color: #E5E7EB;
     padding: 100px 300px;
+
+    @media (max-width: 768px) {
+        padding: 20px;
+    }
+
+    @media (max-width: 1200px) and (min-width: 768px) {
+        padding: 4rem;
+    }
 }
 
 .review p {
@@ -100,16 +150,31 @@ header a:hover {
 
 .review h3 {
     text-align: end;
+    margin-top: 1rem;
+
+    @media (max-width: 768px) {
+        /* max-width: 10rem; */
+        /* text-align: end; */
+    }
 }
 
+/* CTA Section */
 .CTA-container {
     background-color: #3882F6;
     color: white;
-    margin: 100px 250px;
+    margin: 2rem;
     padding: 50px 125px;
     border-radius: 10px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-around;
+
+    @media (max-width: 768px) {
+        padding: 20px;
+        gap: 1.5rem;
+    }
 }
 
 .CTA-container button {
@@ -122,6 +187,7 @@ header a:hover {
     font-size: 1.2rem;
 }
 
+/* Footer */
 footer {
     background-color: #1F2937;
     color: white;
